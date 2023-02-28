@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fashion tem.css">
+    <script src="./fashion template.js"></script>
+    <link rel="stylesheet" href="./shoppage.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+        p{
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container ">
+        <p class="">Home / Lehenga / Attractive Lehenga Choli For Wedding Wear</p>
+        <div class="row d-xl-flex d-lg-flex d-md-flex d-sm-block  mt-4 " style="width: 100%;">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge1">0</span>
+              </div>
+            <div class="smole" >
+                <div style="width: 100%; " class="d-flex">
+
+
+                    <div style="width: 13%;  " class="me-lg-3 me-md-3 me-sm-3 "  >
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
+                            alt="" class="mb-3 sideimg img-fluid">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/4_b77ffde1-a4fe-4ec5-8cba-ae4ae9d1e503_550x.png?v=1605252646"
+                            alt="" class="mb-3 sideimg img-fluid">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/5_b91eb3f5-deeb-4322-b9b3-579d8acf5aa1_550x.png?v=1605252646"
+                            alt="" class="mb-3 sideimg img-fluid">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/6_39c4083e-9c8c-44d0-97c9-0f0538ca81af_550x.png?v=1605252646"
+                            alt="" class="mb-3 sideimg  img-fluid">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/7_eacc0cd0-de42-455f-b506-c4272fa8ea01_550x.png?v=1605252646"
+                            alt="" class="mb-3 sideimg  img-fluid">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/8_fd197621-7075-4636-a4ad-45aa8ed22cf0_550x.png?v=1605252646"
+                            alt="" class="mb-3 sideimg img-fluid">
+                    </div>
+
+                    <div style="width: 87%; " >
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
+                            alt="" class="mainimg img-fluid">
+
+                    </div>
+                </div>
+            </div>
+            <div class="smole2" >
+                <h2>Attractive Lehenga Choli For Wedding Wear</h2>
+
+                <h5 class="margggin_shop"><del class="me-1" style="color: #cccccc;">₹3,999.00</del><b class="fs-4">
+                        ₹2,499.00</b></h5>
+                <p class="margggin_shop">*Top Fabric*: Faux Georgette With Heavy Embroidery And 5mm Sequence Work With
+                    SLEEV Fabric</p>
+                <p class="margggin_shop">*Top Inar * : Micro Cotton </p>
+                <p class="margggin_shop">*Top Lenght * :37-38 Inch</p>
+                <p class="margggin_shop">*Top Size*. : 42 xl free size *(full stitched )*</p>
+                <p class="margggin_shop">*Lehengha Fabrics*: Faux Georgette With Heavy Embroidery And 5mm Sequence Work
+                </p>
+                <p class="margggin_shop">*Plazo Inar* : Micro Cotton</p>
+                <p class="margggin_shop">*Plazo Length*:40-41 Inch</p>
+                <p class="margggin_shop">*Dupatta Fabrics*: Faux Georgette With Embroider And 5mm Sequence Work With
+                    Four Side Hevvy Resa Borda Less</p>
+                <div class="d-flex ">
+                    <div class="cart-container">
+                        <div class="cart-item">
+                          <div class="quantity">
+                            <button class="decrement">-</button>
+                            <span class="number">0</span>
+                            <button class="increment">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div >
+
+                        <button class="cart">ADD TO CART</button>
+                    </div>
+                   
+                </div>
+                <hr>
+                <i class="mt-1 d-inline-block">SKU: LV02</i><br>
+                <i class="mt-2 mb-3 d-inline-block">CATEGORY: Lehenga</i><br>
+                <button class="paying"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/124px-PayPal.svg.png?20210313113929" alt="" width="100px"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+ const decrementBtn = document.querySelector(".decrement");
+const incrementBtn = document.querySelector(".increment");
+const number = document.querySelector(".number");
+const badge = document.querySelector(".badge1");
+
+let count = 0;
+
+decrementBtn.addEventListener("click", () => {
+  if (count > 0) {
+    count--;
+    number.textContent = count;
+    badge.textContent = count;
+  }
+});
+
+incrementBtn.addEventListener("click", () => {
+  count++;
+  number.textContent = count;
+  badge.textContent = count;
+});
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
